@@ -1,0 +1,107 @@
+back away : отступать : PHRASAL_VERB
+be back : возвращаться : PHRASAL_VERB
+be off : Покидать : PHRASAL_VERB
+be out : Отсутствовать : PHRASAL_VERB
+be over : окончиться : PHRASAL_VERB
+blow up : взорвать : PHRASAL_VERB
+break down : сломаться : PHRASAL_VERB
+break up : разрывать отношения : PHRASAL_VERB
+call off : отозвать : PHRASAL_VERB
+calm down : успокоиться : PHRASAL_VERB
+carry around : носить с собой : PHRASAL_VERB
+carry on : продолжаться : PHRASAL_VERB
+carry out : осуществлять : PHRASAL_VERB
+check in : регистрироваться : PHRASAL_VERB
+clean up : прибираться : PHRASAL_VERB
+come across : Натолкнуться : PHRASAL_VERB
+come along : Идти вместе : PHRASAL_VERB
+come from : происходить из : PHRASAL_VERB
+come in : войдите : PHRASAL_VERB
+come off : Отрываться : PHRASAL_VERB
+come on : давай! : PHRASAL_VERB
+come over : приходить : PHRASAL_VERB
+count on : рассчитывать на : PHRASAL_VERB
+cut off : отрезать : PHRASAL_VERB
+end up : закончить : PHRASAL_VERB
+figure out : выяснить : PHRASAL_VERB
+find out : Обнаружить : PHRASAL_VERB
+get around : преодолеть : PHRASAL_VERB
+get back : перезванивать : PHRASAL_VERB
+get down : спускаться : PHRASAL_VERB
+get on : ладить : PHRASAL_VERB
+get out : выбираться : PHRASAL_VERB
+get over : справиться : PHRASAL_VERB
+get up : вставать вертикально или вставать из постели : PHRASAL_VERB
+give up : сдаваться : PHRASAL_VERB
+go away : уходить : PHRASAL_VERB
+go in : входить : PHRASAL_VERB
+go on : продолжать : PHRASAL_VERB
+go out : выйти : PHRASAL_VERB
+go through : пройти через : PHRASAL_VERB
+go up : подниматься : PHRASAL_VERB
+grow up : вырастать : PHRASAL_VERB
+hang up : вешать трубку : PHRASAL_VERB
+hold out : протягивать : PHRASAL_VERB
+hold up : задерживать : PHRASAL_VERB
+keep up : поддерживать : PHRASAL_VERB
+let in : впустить : PHRASAL_VERB
+let out : выпускать : PHRASAL_VERB
+rain cats and dogs : лить как из ведра : IDIOM
+face like thunder : мрачнее тучи : IDIOM
+storm in a teacup : буря в стакане воды, много шума из ничего : IDIOM
+chase rainbows : гнаться за недостижимым : IDIOM
+lightning-fast : молниеносный : IDIOM
+have one's head in the clouds : витать в облаках : IDIOM
+be snowed under : быть перегруженным работой : IDIOM
+be under the weather : недомогать : IDIOM
+twist in the wind : томиться : IDIOM
+under а cloud : под подозрением : IDIOM
+as right as rain : в полном порядке : IDIOM
+for a rainy day : на черный день : IDIOM
+bolt from the blue : как снег на голову : IDIOM
+throw caution to the winds : перестать осторожничать : IDIOM
+weather the storm : пережить трудные времена : IDIOM
+sail close to the wind : ходить по краю пропасти : IDIOM
+on cloud nine : на седьмом небе от счастья : IDIOM
+shoot the breeze : болтать о пустяках : IDIOM
+in a fog : растерянный : IDIOM
+go down a storm : удаться : IDIOM
+a piece of the pie : доля : IDIOM
+gravy train : легкие деньги : IDIOM
+bring home the bacon : обеспечивать семью, преуспевать : IDIOM
+make ends meet : сводить концы с концами : IDIOM
+hit the jackpot : срывать куш : IDIOM
+be in the red : быть в долгу : IDIOM
+make a bundle : сделать кучу денег : IDIOM
+bet your bottom dollar : гарантировать что-либо : IDIOM
+look like a million dollars : выглядеть на все сто : IDIOM
+cost a pretty penny : стоить уйму денег : IDIOM
+go Dutch : платить свою часть : IDIOM
+nest egg : заначка : IDIOM
+golden handshake : большое выходное пособие : IDIOM
+cheapskate : скряга : IDIOM
+be flush with money : купаться в роскоши : IDIOM
+at all costs : любой ценой : IDIOM
+live beyond one's means : жить не по средствам : IDIOM
+break the bank : сильно потратиться : IDIOM
+cost a fortune : стоить целое состояние : IDIOM
+on the breadline : за чертой бедности : IDIOM
+once in a blue moon : очень редко : IDIOM
+behind the times : устаревший : IDIOM
+time flies : время летит : IDIOM
+the big time : большой успех : IDIOM
+around the clock : круглосуточно : IDIOM
+dwell on the past : жить прошлым : IDIOM
+have the time of one's life : отлично провести время : IDIOM
+crack of dawn : с восходом солнца : IDIOM
+run out of time : иссякать : IDIOM
+in the blink of an eye : в одно мгновение : IDIOM
+like clockwork : без перебоя : IDIOM
+for donkey's years : с незапамятных времен : IDIOM
+pressed for time : очень торопиться : IDIOM
+give someone a hard time : отчитывать : IDIOM
+be ahead of time : опережать : IDIOM
+to have a whale of a time : замечательно провести время  : IDIOM
+go with the times : идти в ногу со временем : IDIOM
+on the spur of the moment : с наскока : IDIOM
+in broad daylight : среди бела дня : IDIOM

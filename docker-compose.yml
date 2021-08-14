@@ -1,0 +1,47 @@
+version: '3.7'
+services:
+
+  dbpostgresql:
+    container_name: app-springboot-db
+    build:
+      context: ./dockerfiles/postgres
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydb
+
+  app:
+    container_name: app-springboot-server
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - dbpostgresql
+      - redis
+
+  nginx:
+    container_name: app-springboot-nginx
+    build:
+      context: ./dockerfiles/nginx
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html
+    depends_on:
+      - app
+
+  redis:
+    container_name: redis-db
+    image: redis:6.2.1
+    restart: always
+    ports:
+      - "6379:6379"
+
+

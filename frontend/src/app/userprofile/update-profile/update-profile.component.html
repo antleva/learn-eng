@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <form [formGroup]="updateProfileForm" (ngSubmit)="update()">
+            <div class="form-group row">
+              <label for="name" class="col-md-4 col-form-label text-md-right">name</label>
+              <div class="col-md-6">
+                <input type="text" [formControlName]="'name'" class="form-control" id="name" name="name" placeholder="name" required>
+                <span *ngIf="form.name.invalid && form.name.touched" class="help-block">Please enter a valid name</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-md-4 col-form-label text-md-right">password</label>
+              <div class="col-md-6">
+                <input type="text" [formControlName]="'password'" id="password" class="form-control" name="password" placeholder="password" required>
+                <span *ngIf="form.password.invalid && form.password.touched" class="help-block">Please enter a valid password</span>
+              </div>
+            </div>
+            <span class="col-md-6 offset-md-4" *ngIf="!form.name.invalid && !form.password.invalid">
+              <button type="submit" class="sign-up">
+                Update
+              </button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

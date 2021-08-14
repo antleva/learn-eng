@@ -1,0 +1,32 @@
+<div div class="container">
+  <div class="row justify-content-center">
+    <div *ngIf="!phrase">
+      <button (click)="learn()" class="sign-up">
+        Start
+      </button>
+    </div>
+    <div class="container justify-content-center">
+      <div class="row" *ngIf="phrase">
+      <div>{{count+1}}</div>/<div>{{phrases.length}}</div>
+      <div class="col-md-3">{{phrase.type}}</div>
+      <div class="col-md-3">{{phrase.description}}</div>
+      <div class="col-md-4">
+        <form [formGroup]="checkForm" (ngSubmit)="check()">
+          <input type="text" [formControlName]="'translation'" class="form-control" placeholder="enter translation">
+            <div class="col-md-2">
+              <button type="submit" class="login">
+                next
+              </button>
+            </div>
+        </form>
+      </div>
+      </div>
+    </div>
+
+    <div *ngIf="!phrase&&count>0">
+      <button (click)="finish()" class="sign-up">
+        finish
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row" *ngFor="let phrase of phrases">
+    <div class="col">{{phrase.type}}</div>
+    <div class="col">{{phrase.description}}</div>
+    <div class="col">{{phrase.translation}}</div>
+    <div class="col">
+      <button class="login" (click)="goToPhrase(phrase.id)">
+        Show phrase
+      </button>
+    </div>
+    <div class="col">
+      <button class="login" (click)="deleteFromMyCollection(phrase.id)">
+        delete from collection
+      </button>
+    </div>
+  </div>
+</div>

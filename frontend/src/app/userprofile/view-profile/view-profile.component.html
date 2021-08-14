@@ -1,0 +1,35 @@
+<div class="container justify-content-center">
+  <div *ngIf="profile">
+    <div class="row">
+      <div class="col-md-2">name :</div>
+      <div class="col-md-10">{{profile.name}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">creation date :</div>
+      <div class="col-md-10">{{profile.creationDate}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">last modified date :</div>
+      <div class="col-md-10">{{profile.lastModifiedDate}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">role :</div>
+      <div class="col-md-10">
+        <div *ngFor="let role of roles">
+          {{role}}
+        </div>
+      </div>
+    </div>
+    <button class="login" (click)="update()">
+        Update profile
+    </button>
+  </div>
+  <button class="login" (click)="getResults()">
+    User results :
+  </button>
+  <div class="row" *ngIf="results">
+    <div *ngFor="let result of results">
+      <div class="col"><p class="text-center">{{result}}</p></div>
+    </div>
+  </div>
+</div>

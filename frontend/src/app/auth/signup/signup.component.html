@@ -1,0 +1,39 @@
+<div class="register-section">
+  <div class="row justify-content-center">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header" style="text-align: center">
+          <h4>Register</h4>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="signupForm" (ngSubmit)="signup()">
+            <div class="form-group row">
+              <label for="username" class="col-md-4 col-form-label text-md-right">User Name</label>
+              <div class="col-md-6">
+                <input type="text" [formControlName]="'username'" class="form-control" id="username" name="username" required>
+                <span *ngIf="form.username.invalid && form.username.touched" class="help-block">Please enter a valid username</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+              <div class="col-md-6">
+                <input type="password" [formControlName]="'password'" id="password" class="form-control" name="password" required>
+                <span *ngIf="form.password.invalid && form.password.touched" class="help-block">Please enter a valid password</span>
+              </div>
+            </div>
+            <span class="col-md-6 offset-md-4" *ngIf="!form.password.invalid && !form.username.invalid">
+              <button type="submit" class="sign-up">
+                Sign Up
+              </button>
+            </span>
+            <span class="row justify-content-center">Existing user? <a routerLink="/login"> Log In</a></span>
+            <div class="register-failed" *ngIf='this.isError'>
+              <p class="register-failed-text">Register Failed. Please check your credentials and try again.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

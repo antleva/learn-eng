@@ -1,0 +1,15 @@
+<div class="container justify-content-center">
+  <div class="row" *ngFor="let phrase of phrases">
+    <div class="col-md-3">{{phrase.type}}</div>
+    <div class="col-md-3">{{phrase.description}}</div>
+    <div class="col-md-3">{{phrase.translation}}</div>
+    <video width="200" height="200" controls="controls">
+      <source src="phrase/video/{{phrase.description}}" type='video/mp4'>
+    </video>
+    <div class="col-md-4">
+      <button class="login" (click)="goToPhrase(phrase.id)">
+        Show phrase
+      </button>
+    </div>
+  </div>
+</div>
