@@ -58,6 +58,5 @@ gradlew
 *.json
 *.js
 .editorconfig
-*.gradle
 *.md
 .browserslistrc
