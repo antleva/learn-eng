@@ -14,7 +14,7 @@ import java.util.Set;
 @Table(name="USERS")
 public class User {
     @Id
-    @GeneratedValue(generator = "ID_GENERATOR")
+    @GeneratedValue(generator = "ID_USER_GENERATOR")
     @Column(name = "USER_ID")
     private Long id;
 

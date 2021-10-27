@@ -9,7 +9,7 @@ import java.util.Objects;
 @Entity
 public class Phrase implements Comparable<Phrase>{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "ID_GENERATOR")
     @Column(name = "PHRASE_ID")
     private Long id;
 
