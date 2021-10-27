@@ -59,7 +59,7 @@ class AuthServiceImplementationTest {
         User mockUser = new User("User","123");
         Role role = new Role(RoleName.ROLE_USER);
         mockUser.setRoles(Set.of(role));
-        AuthenticatedRequest registerRequest = new AuthenticatedRequest("User","123");
+        AuthenticatedRequest registerRequest = new AuthenticatedRequest(mockUser.getName(), mockUser.getPassword());
 
         Mockito.when(userJpaRepository.save(Mockito.any())).thenReturn(mockUser);
         Mockito.when(roleJpaRepository.findByRoleName(RoleName.ROLE_USER)).thenReturn(role);

@@ -1,5 +1,7 @@
 package com.myproject.learneng.controllers;
 
+import com.myproject.learneng.domain.Role;
+import com.myproject.learneng.domain.RoleName;
 import com.myproject.learneng.domain.User;
 import com.myproject.learneng.dto.UserDto;
 import com.myproject.learneng.dto.UserUpdateRequest;
@@ -48,7 +50,11 @@ public class UserController {
 
     @DeleteMapping("/{id}/delete")
     public ResponseEntity<List<UserDto>> deleteUser(@PathVariable Long id){
-        userService.deleteUser(id);
+        User current = authService.getCurrentUser();
+        Role roleAdmin = new Role(RoleName.ROLE_ADMIN);
+        if(current.getRoles().contains(roleAdmin)){
+            userService.deleteUser(id);
+        }
         List<UserDto> users = userService.listAllUsers().stream().map(UserDto::getUserDto).collect(Collectors.toList());
         return new ResponseEntity<>(users,OK);
     }
