@@ -22,12 +22,12 @@ public interface PhraseRepository extends JpaRepository<Phrase, Long> {
     @Query(value = "select * from PHRASE p where p.PHRASE_TYPE = 'PHRASAL_VERB'", nativeQuery = true)
     Set<Phrase> listPhrasalVerbs();
 
-    @Query(value = "select * from PHRASE p inner join USERS_PHRASE up on p.PHRASE_TYPE = 'PHRASAL_VERB' " +
-            "and up.USER_ID = ?1", nativeQuery = true)
+    @Query(value = "select * from PHRASE p inner join USERS_PHRASE up " +
+            "on up.PHRASE_ID = p.PHRASE_ID and up.USER_ID = ?1 where p.PHRASE_TYPE = 'PHRASAL_VERB'", nativeQuery = true)
     Set<Phrase> listUsersPhrasalVerbs(Long id);
 
-    @Query(value = "select * from PHRASE p inner join USERS_PHRASE up on p.PHRASE_TYPE = 'IDIOM'  " +
-            "and up.USER_ID = ?1", nativeQuery = true)
+    @Query(value = "select * from PHRASE p inner join USERS_PHRASE up " +
+            "on up.PHRASE_ID = p.PHRASE_ID and up.USER_ID = ?1 where p.PHRASE_TYPE = 'IDIOM'", nativeQuery = true)
     Set<Phrase> listUsersIdioms(Long id);
 
 

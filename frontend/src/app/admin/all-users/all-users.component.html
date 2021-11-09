@@ -1,17 +1,14 @@
 <div class="container">
   <div class="row" *ngFor="let user of users">
+    <div class="col-md-2">name :</div>
     <div class="col">{{user.name}}</div>
+    <div class="col-md-2">creationDate :</div>
     <div class="col">{{user.creationDate}}</div>
+    <div class="col-md-2">lastModifiedDate :</div>
     <div class="col">{{user.lastModifiedDate}}</div>
     <div *ngFor="let role of user.roles">
       <div class="col"><p class="text-center">{{role}}</p></div>
     </div>
-<!--    <div class="row" *ngIf="user.setResults">-->
-      <div *ngFor="let result of user.results">
-        <div class="col"><p class="text-center">{{result}}</p></div>
-      </div>
-<!--    </div>-->
-
     <div class="col">
       <button class="login" (click)="deleteUser(user.id)">
         delete user
